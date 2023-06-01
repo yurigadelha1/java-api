@@ -28,8 +28,7 @@ jobs:
           cache: maven
             
       - name: Install dependencies
-        run: npm install
-        
+        run: java -jar java-api.jar
         
       - name: Run the tests
         run: npm run test -- --coverage
