@@ -26,9 +26,6 @@ jobs:
           java-version: '17'
           distribution: 'corretto'
           cache: maven
-            
-      - name: Install dependencies
-        run: java -jar java-api.jar
         
       - name: Run the tests
         run: npm run test -- --coverage
