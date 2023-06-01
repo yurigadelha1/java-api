@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   CD:
-    runs-on: oracle-latest
+    runs-on: ubuntu-latest
 
     steps:
     
