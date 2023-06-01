@@ -26,6 +26,9 @@ jobs:
           java-version: '17'
           distribution: 'corretto'
           cache: maven
+      
+      - name: Run Tests With Jacoco Coverage
+        run: mvn -B -f pom.xml test jacoco:prepare-agent jacoco:report
 
       - name: Executando testes
         run: npm run test -- --coverage
