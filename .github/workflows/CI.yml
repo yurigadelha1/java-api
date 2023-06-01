@@ -12,7 +12,7 @@ on:
 # Fluxo de trabalho
 jobs:
   CI:
-    runs-on: oracle-latest
+    runs-on: ubuntu-latest
     
     # Passos do fluxo de trabalho
     steps:
